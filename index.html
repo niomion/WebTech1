@@ -10,18 +10,25 @@
 <body>
     <nav class="flex-nav">
         <div>
-            <h1 style="margin-left: 5%;">Logo</h1>
+             <span class="openmobile" onclick="openNav()">&#9776;</span>
+            <img src="/img/logoplaceholder.png" class="merg1" alt="logo">
         </div>
         <div>
-            <h1>Links</h1>
+            <a href="#">About</a>
         </div>
         <div>
-            <h1>Links</h1>
+            <a href="#">Services</a>
         </div>
         <div>
-            <h1>Links</h1>
+            <a href="#">Contact</a>
         </div>
     </nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
     <header class="flex-header">
         <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere laboriosam maiores aliquid totam dignissimos aliquam earum. Similique ipsum necessitatibus quam eligendi libero quia. Incidunt qui officia distinctio quod nesciunt eaque!</h1>
     </header>
@@ -37,31 +44,31 @@
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 5</div>
-                    <img src="/img/galleryplaceholder.png" style="height:500px; width:100%">
+                    <img src="/img/galleryplaceholder.png" style="height:100%; width:100%">
                     <div class="text">Caption Text</div>
                   </div>
                 
                   <div class="mySlides fade">
                     <div class="numbertext">2 / 5</div>
-                    <img src="/img/galleryplaceholder.png" style="height:500px; width:100%">
+                    <img src="/img/galleryplaceholder.png" style="height:100%; width:100%">
                     <div class="text">Caption Two</div>
                   </div>
                 
                   <div class="mySlides fade">
                     <div class="numbertext">3 / 5</div>
-                    <img src="/img/galleryplaceholder.png" style="height:500px; width:100%">
+                    <img src="/img/galleryplaceholder.png" style="height:100%; width:100%">
                     <div class="text">Caption Three</div>
                   </div>
                 
                   <div class="mySlides fade">
                     <div class="numbertext">4 / 5</div>
-                    <img src="/img/galleryplaceholder.png" style="height:500px; width:100%">
+                    <img src="/img/galleryplaceholder.png" style="height:100%; width:100%">
                     <div class="text">Caption Three</div>
                   </div>
 
                   <div class="mySlides fade">
                     <div class="numbertext">5 / 5</div>
-                    <img src="/img/galleryplaceholder.png" style="height:500px; width:100%">
+                    <img src="/img/galleryplaceholder.png" style="height:100%; width:100%">
                     <div class="text">Caption Three</div>
                   </div>
 
@@ -84,23 +91,31 @@
             </div>
         </div>
 
+        <hr>
+
         <div class="flex-container block4">
             <div>
             </div>
         </div>
 
+        <hr>
+
         <div class="flex-container block5">
-            <div class="sub_block new_dex">
-                <form id="subscription_form" class="form_sub">
-                    <p class="title">Like what you're reading? Get weekly updates that will help
-                    <br> you grow as a designer.</p>
-                    <div class="inputs">
-                    <input type="text" name="name" required placeholder="Name">
-                    <input type="email" name="email" required placeholder="email">
-                    </div>
-                    <button type="submit">Subscribe</button>
-                    </form>
-            </div>
+            <form action="/action_page.php">
+                <div class="container">
+                  <h2>Subscribe to our Newsletter</h2>
+                  <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you should subscribe to our newsletter blabla.</p>
+                </div>
+              
+                <div class="container" style="background-color:white">
+                  <input type="text" placeholder="Name" name="name" required>
+                  <input type="text" placeholder="Email address" name="mail" required>
+                </div>
+              
+                <div class="container">
+                  <input type="submit" value="Subscribe">
+                </div>
+              </form>
         </div>
 
     </main>

@@ -27,3 +27,18 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  
+  function mobileHide() {
+    var divs = document.querySelectorAll('.flex-nav > div');
+    for (var i = 1; i < divs.length; i++) {
+    divs[i].style.display = 'none'; 
+}
+  } 

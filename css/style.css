@@ -1,9 +1,18 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+a:hover {
+    color: gray;
+    transition: 0.3s;
 }
 
 .flex-container {
@@ -13,13 +22,11 @@ body {
 .block1 {
     background-color: rgb(255, 255, 255);
     height: 750px;
-    border-bottom: 1px solid darkgray;
 }
 
 .block2 {
     flex-direction: column;
     background-color: #404044;
-    border-bottom: 1px solid darkgray;
     padding-top: 2%;
     padding-bottom: 1%;
 }
@@ -27,31 +34,44 @@ body {
 .block3 {
     background-color: rgb(255, 255, 255);
     height: 750px;
-    border-bottom: 1px solid darkgray;
+
+}
+
+hr {
+    width: 95%;
+    margin: auto;
 }
 
 .block4 {
     background-color: rgb(255, 255, 255);
     height: 750px;
-    border-bottom: 1px solid darkgray;
 }
 
 .block5 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(255, 255, 255);
-    height: 750px;
 }
 
 .flex-nav {
+    padding-top: 0.5%;
+    padding-bottom: 0.25%;
     z-index: 1;
-    transition: 0.4s ease;
     position: sticky;
     top: 0;
     display: flex; 
     align-items: center;
     width: 100%;
-    height: 5vw;
     background-color: #404044;
     color: rgb(255, 255, 255);
+}
+
+.merg1 {
+    margin-left: 5%;
+    height: 50px; 
+    width: 50px;
 }
 
 .flex-nav > div:first-child {
@@ -77,72 +97,40 @@ header {
 
 /* Form */
 
-.sub_block.new_dex {
-    margin: auto;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url(../img/last.png);
-    height: 631px;
+form {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+    width: 50%;
+    height: 50%;
+  }
+  
+  .container {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  input[type=text], input[type=submit] {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    .sub_block.new_dex .form_sub {
-    background-color: rgba(39, 61, 70, 0.902);
-    width: 670px;
-    height: 327px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-    .sub_block.new_dex .form_sub .title {
-    text-align: center;
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.875;
-    }
-
-    .sub_block.new_dex .form_sub .inputs {
-        display: flex;
-        text-align: center;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .sub_block.new_dex .form_sub .inputs input {
-        border-style: solid;
-        border-width: 1px;
-        border-color: rgb(255, 247, 244);
-        border-radius: 22px;
-        background-color: rgba(0, 0, 0, 0.2);
-        left: 454px;
-        top: 4158px;
-        width: 251px;
-        height: 30px;
-        outline: none;
-        color: #fff;
-        padding: 10px;
-        }
-        .sub_block.new_dex .form_sub button {
-        border-radius: 22px;
-        background-color: rgb(128, 183, 179);
-        box-shadow: 0px 6px 40px 0px rgba(128, 183, 179, 0.54);
-        margin-top: 20px;
-        width: 232px;
-        height: 44px;
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        text-transform: uppercase;
-        cursor: pointer;
-        }
-
-
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: #404044;;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
 
 /* Carousel */
 
@@ -223,6 +211,80 @@ header {
     to {opacity: 1}
   }
 
-  @media only screen and (max-width: 300px) {
+/* sidenav */
+
+.openmobile {
+    font-size:30px;
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  @media only screen and (max-width: 768px) {
     .prev, .next,.text {font-size: 11px}
+
+    .flex-nav > div{
+        display: flex;
+        align-items:center;
+    }
+
+    .merg1 {
+        margin: auto;
+        height: 35px; 
+        width: 35px;
+    }
+
+    .flex-nav > div:not(:first-child) {
+        display: none;
+    }
+
+    .openmobile {
+        margin-left: 1%;
+        position: absolute;
+        font-size:30px;
+        display: block;
+    }
+
+    form {
+        border: 3px solid #f1f1f1;
+        font-family: Arial;
+        width: 100%;
+        height: 50%;
+      }
+
+      .block5 {
+        margin-bottom: 0;
+      }
   }
