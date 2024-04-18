@@ -83,7 +83,7 @@ width: 16%;
 }
 
 header {
-    background-image: url(/img/backgroundholder.png);
+    background-image: url("../img/backgroundholder.png");
     height: 50vw;
 }
 
@@ -99,7 +99,7 @@ header {
 
 form {
     border: 3px solid #f1f1f1;
-    font-family: Arial;
+    font-size: 25px;
     width: 50%;
     height: 50%;
   }
@@ -111,6 +111,7 @@ form {
   
   input[type=text], input[type=submit] {
     width: 100%;
+    font-size: 20px;
     padding: 12px;
     margin: 8px 0;
     display: inline-block;
