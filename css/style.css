@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+}
+
+.flex-container {
+    display: flex; 
+}
+
+.block1 {
+    background-color: rgb(255, 255, 255);
+    height: 750px;
+    border-bottom: 1px solid darkgray;
+}
+
+.block2 {
+    flex-direction: column;
+    background-color: #404044;
+    border-bottom: 1px solid darkgray;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+.block3 {
+    background-color: rgb(255, 255, 255);
+    height: 750px;
+    border-bottom: 1px solid darkgray;
+}
+
+.block4 {
+    background-color: rgb(255, 255, 255);
+    height: 750px;
+    border-bottom: 1px solid darkgray;
+}
+
+.block5 {
+    background-color: rgb(255, 255, 255);
+    height: 750px;
+}
+
+.flex-nav {
+    z-index: 1;
+    transition: 0.4s ease;
+    position: sticky;
+    top: 0;
+    display: flex; 
+    align-items: center;
+    width: 100%;
+    height: 5vw;
+    background-color: #404044;
+    color: rgb(255, 255, 255);
+}
+
+.flex-nav > div:first-child {
+    width: 100%;
+}
+
+.flex-nav > div {
+width: 16%;
+}
+
+header {
+    background-image: url(/img/backgroundholder.png);
+    height: 50vw;
+}
+
+.flex-footer {
+    display: flex; 
+    align-items: center;
+    background-color: #404044;
+    height: 5vw;
+    color: rgb(255, 255, 255);
+}
+
+/* Form */
+
+.sub_block.new_dex {
+    margin: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../img/last.png);
+    height: 631px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .sub_block.new_dex .form_sub {
+    background-color: rgba(39, 61, 70, 0.902);
+    width: 670px;
+    height: 327px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .sub_block.new_dex .form_sub .title {
+    text-align: center;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.875;
+    }
+
+    .sub_block.new_dex .form_sub .inputs {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sub_block.new_dex .form_sub .inputs input {
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(255, 247, 244);
+        border-radius: 22px;
+        background-color: rgba(0, 0, 0, 0.2);
+        left: 454px;
+        top: 4158px;
+        width: 251px;
+        height: 30px;
+        outline: none;
+        color: #fff;
+        padding: 10px;
+        }
+        .sub_block.new_dex .form_sub button {
+        border-radius: 22px;
+        background-color: rgb(128, 183, 179);
+        box-shadow: 0px 6px 40px 0px rgba(128, 183, 179, 0.54);
+        margin-top: 20px;
+        width: 232px;
+        height: 44px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        }
+
+
+
+/* Carousel */
+
+.slideshow-container {
+  max-width: 75%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
